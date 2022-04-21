@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "top top top"
+    "boxE mid boxD"
+    "footer footer footer";
+
+    grid-template-rows: 50px 1fr 60px;
+    grid-template-columns: 150px 1fr 210px;
+
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    grid-area: top;
+    background-color: #09065c;
+}
+
+#logoIF{
+    position: absolute;
+    left: -5px; top: -38px;
+    width: 100px;
+    height: 100px;
+}
+
+a.Menu{
+    position: relative;
+    top: 13px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+a.Menu:hover{
+    color: rgb(121, 177, 237);
+}
+
+asideL{
+    text-align: left;
+    grid-area: boxE;
+    background-color: #5b73cf;
+    border-right: thin black solid;
+}
+
+a.menu_cursos{
+    text-decoration: none;
+}
+
+li.lista_Cursos{
+    position: relative;
+    left: -40px; ;
+    padding: 5px;
+    list-style-type: none;
+    color: black;
+    
+}
+li.lista_Cursos:hover{
+    color:white;
+}
+
+asideR{
+    text-align: left;
+    grid-area: boxD;
+    background-color: #5b73cf;
+    border-left: thin black solid;
+}
+
+li.lista_laboratorios{
+    position: relative;
+    left: -20px; 
+    padding: 8px;
+    list-style-type: none ;
+    color: black;
+}
+
+#laboratorio{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+
+#curso{
+    position: relative;
+    color:white;
+    text-decoration: none;
+}
+
+main{
+    grid-area: mid;
+    background-color: white;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 25px;
+    padding: 0.5em;
+  }
+
+footer{
+    padding:30px;
+    text-align: center;
+    grid-area: footer;
+    background-color: #09065c;
+    color: white;
+    border: thin black solid;
+}
